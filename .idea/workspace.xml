@@ -1,21 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3644fbf8-8102-4d42-baa2-abdf106e401f" name="Default Changelist" comment="" />
+    <list default="true" id="3644fbf8-8102-4d42-baa2-abdf106e401f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/my-app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/EDV-logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/mainPage/mainPageAllBlocks.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/mainPage/mainPageFooter.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/mainPage/mainPageHeader.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/mainPage/mainPageMain.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/serviceWorker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1iQSIEjIJpJeWvCP063BsweblHu" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ReactWebProjectTraining" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -27,11 +78,36 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601838240364</updated>
-      <workItem from="1601838241449" duration="304000" />
+      <workItem from="1601838241449" duration="832000" />
+      <workItem from="1601847430148" duration="19120000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="534" y="230" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601851940832">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="534" y="230" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860@0.0.1600.860" timestamp="1601851940832" />
+    <state x="980" y="183" key="FileChooserDialogImpl" timestamp="1601852541694">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="980" y="183" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1601852541694" />
   </component>
 </project>
