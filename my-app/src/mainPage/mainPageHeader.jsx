@@ -2,9 +2,10 @@ import React from 'react';
 import logo from "../EDV-logo.jpg";
 import '../index.css';
 
+
 const mainPageHeader=()=>{
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-light navBarBackgroundColor" >
             <a className="navbar-brand" href="#">
                 <img src={logo} className="App-logo" alt="logo" />
             </a>
@@ -26,9 +27,20 @@ const mainPageHeader=()=>{
                             Catalog
                         </a>
                         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a className="dropdown-item" href="#">Mobiles</a>
-                            <a className="dropdown-item" href="#">Gudgets</a>
-                            <a className="dropdown-item" href="#">Tv</a>
+                            <a className="dropdown-item" href="#">
+                                <button type="button" className="btn btn-primary" data-toggle="modal"
+                                        data-target="#goodsContentModal">
+                                    <i className="fas fa-mobile"></i> Mobiles
+                                </button>
+                            </a>
+                            <a className="dropdown-item" href="#">
+                                <button type="button" className="btn btn-primary" data-toggle="modal"
+                                        data-target="#goodsContentModal">
+                                    <i className="fas fa-tv"></i> Tv
+                                </button>
+                            </a>
+                            <a className="dropdown-item" href="#">Gadgets</a>
+                            <a className="dropdown-item" href="#"></a>
                             <a className="dropdown-item" href="#">Audio</a>
                             <div className="dropdown-divider"></div>
                             <a className="dropdown-item" href="#">Computers</a>

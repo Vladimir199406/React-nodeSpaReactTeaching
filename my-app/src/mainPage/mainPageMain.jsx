@@ -1,12 +1,12 @@
 import React from 'react';
 import '../index.css';
-import logo from "../EDV-logo.jpg";
+import sideBarGoodsContent from "../goods/sideBarGoodsContent";
 
 const mainPageMain=()=>{
     return (
-    <div className="container-fluid">
+    <div className="container justify-content-center">
+        {sideBarGoodsContent()}
         <div className="row my-3">
-            //below is Carousel
             <div className="col-sm shadow-lg p-3 mb-5 bg-white rounded">
                 <div id="carouselExampleFade" className="carousel slide carousel-fade" data-ride="carousel">
                     <div className="carousel-inner">
@@ -29,7 +29,8 @@ const mainPageMain=()=>{
                         <span className="sr-only">Next</span>
                     </a>
                 </div>
-                <div className="row">
+
+                <div className="row text-center">
                     <div className="col-sm">
                         <div className="card cardWidth">
                             <div className="card-body">
@@ -72,16 +73,16 @@ const mainPageMain=()=>{
                 </div>
             </div>
 
-            //below are Cards with goods
-            <div className="col-sm">
 
+            <div className="col-sm text-center">
                 <div className="card cardWidth">
                     <img src="https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" className="card-img-top" alt="..."/>
                         <div className="card-body">
                             <h5 className="card-title">Mobile phones</h5>
-                            <a href="#" className="btn btn-primary">
-                                <i className="fas fa-mobile"></i> See the catalog
-                            </a>
+                            <button type="button" className="btn btn-primary" data-toggle="modal"
+                                    data-target="#goodsContentModal">
+                                <i className="fas fa-mobile"></i> Mobiles
+                            </button>
                         </div>
                 </div>
 
@@ -89,9 +90,10 @@ const mainPageMain=()=>{
                     <img src="https://images.unsplash.com/photo-1567690187548-f07b1d7bf5a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" className="card-img-top" alt="..."/>
                     <div className="card-body">
                         <h5 className="card-title">Tv</h5>
-                        <a href="#" className="btn btn-primary">
-                            <i className="fas fa-tv"></i> See the catalog
-                        </a>
+                        <button type="button" className="btn btn-primary" data-toggle="modal"
+                                data-target="#goodsContentModal">
+                            <i className="fas fa-tv"></i> Tv
+                        </button>
                     </div>
                 </div>
 
@@ -107,11 +109,11 @@ const mainPageMain=()=>{
             </div>
 
 
-            <div className="col-sm">
+            <div className="col-sm text-center">
                 <div className="card cardWidth">
                     <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80" className="card-img-top" alt="..."/>
                     <div className="card-body">
-                        <h5 className="card-title">Gudgets</h5>
+                        <h5 className="card-title">Gadgets</h5>
                         <a href="#" className="btn btn-primary">
                             <i className="fab fa-android"></i> See the catalog
                         </a>
@@ -138,6 +140,7 @@ const mainPageMain=()=>{
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
     )
