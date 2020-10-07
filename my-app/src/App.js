@@ -3,23 +3,20 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MainPageHeader from "./mainPage/mainPageHeader";
 import MainPageMain from "./mainPage/mainPageMain";
-import SideBarGoodsContent from "./goods/sideBarGoodsContent";
+import ModalWindowGoods from "./goods/modalWindowGoods";
 import MainPageFooter from "./mainPage/mainPageFooter";
+import {BrowserRouter} from "react-router-dom";
 
 
 function App() {
   return (
       <div className="App">
-        <header>
-          <MainPageHeader/>
-        </header>
-        <main>
-          <MainPageMain/>
-          <SideBarGoodsContent/>
-        </main>
-        <footer>
-          <MainPageFooter/>
-        </footer>
+          <BrowserRouter>
+              <MainPageHeader/>
+              <MainPageMain/>
+              <MainPageFooter/>
+              <ModalWindowGoods/>
+          </BrowserRouter>
       </div>
   );
 }
