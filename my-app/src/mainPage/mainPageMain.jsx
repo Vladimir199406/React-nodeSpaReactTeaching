@@ -32,7 +32,7 @@ const mainPageMain=()=>{
 
                 <div className="row text-center">
                     <div className="col-sm">
-                        <div className="card cardWidth">
+                        <div className="card my-3">
                             <div className="card-body">
                                 <h5 className="card-title">Thousands of goods</h5>
                                 <p className="card-text">Open the catalog, choose your own goods.</p>
@@ -41,7 +41,7 @@ const mainPageMain=()=>{
                         </div>
                     </div>
                     <div className="col-sm">
-                        <div className="card cardWidth">
+                        <div className="card my-3">
                             <div className="card-body">
                                 <h5 className="card-title">Profitable loyalty program</h5>
                                 <p className="card-text">Register an account or sign in to know about your special
@@ -52,7 +52,7 @@ const mainPageMain=()=>{
                         </div>
                     </div>
                     <div className="col-sm">
-                        <div className="card cardWidth">
+                        <div className="card my-3">
                             <div className="card-body">
                                 <h5 className="card-title">Regular discounts</h5>
                                 <p className="card-text">Always thinking about customers.</p>
@@ -61,7 +61,7 @@ const mainPageMain=()=>{
                         </div>
                     </div>
                     <div className="col-sm">
-                        <div className="card cardWidth">
+                        <div className="card my-3">
                             <div className="card-body">
                                 <h5 className="card-title">No cheating</h5>
                                 <p className="card-text">
@@ -75,7 +75,7 @@ const mainPageMain=()=>{
 
 
             <div className="col-sm text-center">
-                <div className="card cardWidth">
+                <div className="card">
                     <img src="https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" className="card-img-top" alt="..."/>
                         <div className="card-body">
                             <h5 className="card-title">Mobile phones</h5>
@@ -86,7 +86,7 @@ const mainPageMain=()=>{
                         </div>
                 </div>
 
-                <div className="card cardWidth">
+                <div className="card my-3">
                     <img src="https://images.unsplash.com/photo-1567690187548-f07b1d7bf5a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" className="card-img-top" alt="..."/>
                     <div className="card-body">
                         <h5 className="card-title">Tv</h5>
@@ -97,7 +97,7 @@ const mainPageMain=()=>{
                     </div>
                 </div>
 
-                <div className="card cardWidth">
+                <div className="card my-3">
                     <img src="https://images.unsplash.com/photo-1497296805880-3b37686c87ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" className="card-img-top" alt="..."/>
                     <div className="card-body">
                         <h5 className="card-title">Computers</h5>
@@ -110,7 +110,7 @@ const mainPageMain=()=>{
 
 
             <div className="col-sm text-center">
-                <div className="card cardWidth">
+                <div className="card my-3">
                     <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80" className="card-img-top" alt="..."/>
                     <div className="card-body">
                         <h5 className="card-title">Gadgets</h5>
@@ -120,7 +120,7 @@ const mainPageMain=()=>{
                     </div>
                 </div>
 
-                <div className="card cardWidth">
+                <div className="card my-3">
                     <img src="https://images.unsplash.com/photo-1566478989151-541ffa519573?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" className="card-img-top" alt="..."/>
                     <div className="card-body">
                         <h5 className="card-title">Audio</h5>
@@ -130,7 +130,7 @@ const mainPageMain=()=>{
                     </div>
                 </div>
 
-                <div className="card cardWidth">
+                <div className="card my-3">
                     <img src="https://images.unsplash.com/photo-1531390658120-e06b58d826ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" className="card-img-top" alt="..."/>
                     <div className="card-body">
                         <h5 className="card-title">Consoles</h5>
