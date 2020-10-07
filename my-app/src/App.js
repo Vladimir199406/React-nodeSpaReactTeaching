@@ -1,14 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import mainPageAllBlocks from "./mainPage/mainPageAllBlocks";
+import MainPageHeader from "./mainPage/mainPageHeader";
+import MainPageMain from "./mainPage/mainPageMain";
+import SideBarGoodsContent from "./goods/sideBarGoodsContent";
+import MainPageFooter from "./mainPage/mainPageFooter";
+
 
 function App() {
   return (
-    <div className="App">
-        {mainPageAllBlocks()}
-    </div>
+      <div className="App">
+        <header>
+          <MainPageHeader/>
+        </header>
+        <main>
+          <MainPageMain/>
+          <SideBarGoodsContent/>
+        </main>
+        <footer>
+          <MainPageFooter/>
+        </footer>
+      </div>
   );
 }
 

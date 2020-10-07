@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function sideBarGoodsContent() {
+function SideBarGoodsContent() {
     return (
         <div className="modal fade" id="goodsContentModal" tabIndex="-1" role="dialog" aria-labelledby="goodsContentModalLabel" aria-hidden="true">
             <div className="modal-dialog">
@@ -26,4 +26,4 @@ function sideBarGoodsContent() {
     );
 }
 
-export default sideBarGoodsContent;
+export default SideBarGoodsContent;

@@ -3,7 +3,7 @@ import logo from "../EDV-logo.jpg";
 import '../index.css';
 
 
-const mainPageHeader=()=>{
+const MainPageHeader=()=>{
     return (
         <nav className="navbar navbar-expand-lg navbar-light navBarBackgroundColor" >
             <a className="navbar-brand" href="#">
@@ -79,4 +79,4 @@ const mainPageHeader=()=>{
     )
 }
 
-export default mainPageHeader;
+export default MainPageHeader;

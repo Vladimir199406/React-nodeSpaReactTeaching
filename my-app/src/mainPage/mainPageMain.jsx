@@ -1,11 +1,10 @@
 import React from 'react';
 import '../index.css';
-import sideBarGoodsContent from "../goods/sideBarGoodsContent";
 
-const mainPageMain=()=>{
+
+const MainPageMain=()=>{
     return (
     <div className="container justify-content-center">
-        {sideBarGoodsContent()}
         <div className="row my-3">
             <div className="col-sm shadow-lg p-3 mb-5 bg-white rounded">
                 <div id="carouselExampleFade" className="carousel slide carousel-fade" data-ride="carousel">
@@ -146,4 +145,4 @@ const mainPageMain=()=>{
     )
 }
 
-export default mainPageMain;
+export default MainPageMain;

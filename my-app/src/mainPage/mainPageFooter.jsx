@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from "../EDV-logo.jpg";
 
-const mainPageFooter=()=>{
+const MainPageFooter=()=>{
     return (
         <div className="my-4">
             <nav className="navbar navbar-light bg-light">
@@ -39,4 +39,4 @@ const mainPageFooter=()=>{
     )
 }
 
-export default mainPageFooter;
+export default MainPageFooter;
