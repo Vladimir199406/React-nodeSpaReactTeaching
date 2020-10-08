@@ -8,14 +8,14 @@ import MainPageFooter from "./mainPage/mainPageFooter";
 import {BrowserRouter} from "react-router-dom";
 
 
-function App() {
+function App(props) {
   return (
       <div className="App">
           <BrowserRouter>
               <MainPageHeader/>
               <MainPageMain/>
               <MainPageFooter/>
-              <ModalWindowGoodsTemplate/>
+              <ModalWindowGoodsTemplate getGoods={props.getGoods}/>
           </BrowserRouter>
       </div>
   );

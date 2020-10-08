@@ -11,11 +11,11 @@ const MainPageHeader=()=>{
                 <NavLink className="navbar-brand" to="">
                     <img src={logo} className="App-logo" alt="logo" />
                 </NavLink>
-                <button className="navbar-toggler" type="button" data-toggle="collapse"
+                <button className="navbar-toggler border border-primary" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span>
-                        <i className="fas fa-map-signs fa-2x"></i>
+                        <i className="far fa-compass fa-2x"></i>
                     </span>
                 </button>
 

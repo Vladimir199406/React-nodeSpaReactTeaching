@@ -7,10 +7,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {getGoods} from "./state";
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App getGoods={getGoods}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
