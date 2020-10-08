@@ -9,10 +9,24 @@ const ModalWindowGoodsTemplate=()=>{
              aria-hidden="true">
             <div className="modal-dialog">
                 <div className="modal-content">
-                    <div className="modal-header">
+                    <div>
                         <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
+                    </div>
+                    <div className="modal-header align-content-center">
+                        <div className="col-sm">
+                            <form className="form-inline my-2 my-lg-0 row">
+                                <div className="container col-sm no-margin">
+                                    <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
+                                </div>
+                                <div className="container col-sm no-margin">
+                                    <button className="btn btn-outline-success my-2 my-sm-0" type="submit">
+                                        <i className="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                     <div className="modal-body">
                         <Route exact path="/mobiles" render={()=>{
@@ -47,7 +61,7 @@ const ModalWindowGoodsTemplate=()=>{
                         }}/>
                     </div>
                     <div className="modal-footer">
-                        <NavLink to="/Home">
+                        <NavLink to="">
                         <button type="button" className="btn btn-secondary" data-dismiss="modal">
                             <i className="fas fa-times-circle"></i>
                         </button>
