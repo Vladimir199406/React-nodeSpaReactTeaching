@@ -41,26 +41,26 @@ const MainPageHeader=()=>{
                                         <i className="fas fa-tv"></i> Tv
                                     </button>
                                 </NavLink>
-                                <NavLink className="dropdown-item" to="/computers">
+                                <NavLink className="dropdown-item" exact to="/computers">
                                     <button type="button" className="btn btn-primary" data-toggle="modal"
                                             data-target="#goodsContentModal">
                                         <i className="fas fa-laptop-code"></i> Computers
                                     </button>
                                 </NavLink>
-                                <NavLink className="dropdown-item" to="/gadgets">
+                                <NavLink className="dropdown-item" exact to="/gadgets">
                                     <button type="button" className="btn btn-primary" data-toggle="modal"
                                             data-target="#goodsContentModal">
                                         <i className="fab fa-android"></i> Gadgets
                                     </button>
                                 </NavLink>
                                 <div className="dropdown-divider"></div>
-                                <NavLink className="dropdown-item" to="/audio">
+                                <NavLink className="dropdown-item" exact to="/audio">
                                     <button type="button" className="btn btn-primary" data-toggle="modal"
                                             data-target="#goodsContentModal">
                                         <i className="fas fa-volume-up"></i> Audio
                                     </button>
                                 </NavLink>
-                                <NavLink className="dropdown-item" to="/consoles">
+                                <NavLink className="dropdown-item" exact to="/consoles">
                                     <button type="button" className="btn btn-primary" data-toggle="modal"
                                             data-target="#goodsContentModal">
                                         <i className="fab fa-playstation"></i> Consoles
