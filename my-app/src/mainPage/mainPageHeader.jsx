@@ -11,12 +11,13 @@ const MainPageHeader=()=>{
                 <NavLink className="navbar-brand" to="">
                     <img src={logo} className="App-logo" alt="logo" />
                 </NavLink>
-                <button className="navbar-toggler border border-primary" type="button" data-toggle="collapse"
+                <button className="navbar-toggler border" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span>
-                        <i className="far fa-compass fa-2x"></i>
-                    </span>
+                        aria-expanded="false" aria-label="Toggle navigation"
+                >
+                    <div className="my-2">
+                        <i className="far fa-compass fa-2x fa-spin"></i>
+                    </div>
                 </button>
 
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -56,16 +57,10 @@ const MainPageHeader=()=>{
                                 <NavLink className="dropdown-item" exact to="/gadgets">
                                     <button type="button" className="btn btn-primary" data-toggle="modal"
                                             data-target="#goodsContentModal">
-                                        <i className="fab fa-android"></i> Gadgets
+                                        <i className="fab fa-android"></i> Gadgets and and audio
                                     </button>
                                 </NavLink>
                                 <div className="dropdown-divider"></div>
-                                <NavLink className="dropdown-item" exact to="/audio">
-                                    <button type="button" className="btn btn-primary" data-toggle="modal"
-                                            data-target="#goodsContentModal">
-                                        <i className="fas fa-volume-up"></i> Audio
-                                    </button>
-                                </NavLink>
                                 <NavLink className="dropdown-item" exact to="/consoles">
                                     <button type="button" className="btn btn-primary" data-toggle="modal"
                                             data-target="#goodsContentModal">

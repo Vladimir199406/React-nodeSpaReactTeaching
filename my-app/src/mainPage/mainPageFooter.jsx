@@ -13,7 +13,7 @@ const MainPageFooter=()=>{
                             <span className="sr-only">(current)</span></NavLink>
                     </span>
                     <span className="navbar-brand mb-0 h1">
-                        <a className="nav-link" href="https://wa.me/79152431253">Tsallagov <i className="fas fa-phone-volume"></i>: 8-915-243-12-53 </a>
+                        <a className="nav-link" href="https://wa.me/79152431253"><i className="fas fa-phone-volume"></i>: 8-915-243-12-53 </a>
                     </span>
                     <div><span className="navbar-brand mb-0 h1">
                         <a className="nav-link" href="#">

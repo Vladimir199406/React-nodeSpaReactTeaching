@@ -15,7 +15,7 @@ function App(props) {
               <MainPageHeader/>
               <MainPageMain/>
               <MainPageFooter/>
-              <ModalWindowGoodsTemplate getGoods={props.getGoods}/>
+              <ModalWindowGoodsTemplate getMobiles={props.getMobiles}/>
           </BrowserRouter>
       </div>
   );

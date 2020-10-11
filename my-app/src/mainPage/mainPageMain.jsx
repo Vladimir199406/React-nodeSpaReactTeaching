@@ -8,17 +8,17 @@ const MainPageMain=()=>{
         <main>
             <div className="container justify-content-center">
                 <div className="row my-3">
-                    <div className="col-sm shadow-lg p-3 mb-5 bg-white rounded">
+                    <div className="col-sm p-3 mb-5 rounded" style={{backgroundColor: "#282c34"}}>
                         <div id="carouselExampleFade" className="carousel slide carousel-fade" data-ride="carousel">
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
-                                    <img src="https://images.unsplash.com/photo-1593643946890-b5b85ade6451?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" className="d-block w-100 pictureCarousel" alt="..."/>
+                                    <img src="https://images.unsplash.com/photo-1593643946890-b5b85ade6451?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" className="d-block  pictureCarousel mx-auto" alt="..."/>
                                 </div>
                                 <div className="carousel-item">
-                                    <img src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" className="d-block w-100 pictureCarousel" alt="..."/>
+                                    <img src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" className="d-block pictureCarousel mx-auto" alt="..."/>
                                 </div>
                                 <div className="carousel-item">
-                                    <img src="https://images.unsplash.com/photo-1593784991188-c899ca07263b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" className="d-block w-100 pictureCarousel" alt="..."/>
+                                    <img src="https://images.unsplash.com/photo-1593784991188-c899ca07263b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" className="d-block pictureCarousel mx-auto" alt="..."/>
                                 </div>
                             </div>
                             <a className="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -31,18 +31,27 @@ const MainPageMain=()=>{
                             </a>
                         </div>
 
-                        <div className="row text-center">
-                            <div className="col-sm">
-                                <div className="card my-3">
+                        <div className="text-center">
+
+                                <div className=" card my-5">
                                     <div className="card-body">
-                                        <h5 className="card-title">Thousands of goods</h5>
-                                        <p className="card-text">Open the catalog, choose your own goods.</p>
+                                        <h5 className="card-title">Thousands of goods with</h5>
+                                        <p className="card-text">Open the catalog, choose your own goods delivered to us from verified suppliers.</p>
                                         <a href="#" className="btn btn-primary"><i className="fas fa-user"></i> Register now</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="col-sm">
-                                <div className="card my-3">
+
+
+                                <div className=" card my-5">
+                                    <div className="card-body">
+                                        <h5 className="card-title">No cheating</h5>
+                                        <p className="card-text">Goods are delivered to us ONLY from verified suppliers.</p>
+                                        <a href="#" className="btn btn-primary"><i className="fas fa-user"></i> Register now</a>
+                                    </div>
+                                </div>
+
+
+                                <div className="card my-5">
                                     <div className="card-body">
                                         <h5 className="card-title">Profitable loyalty program</h5>
                                         <p className="card-text">Register an account or sign in to know about your special
@@ -51,105 +60,102 @@ const MainPageMain=()=>{
                                         <a href="#" className="btn btn-primary"><i className="fas fa-user"></i> Register now</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="col-sm">
-                                <div className="card my-3">
-                                    <div className="card-body">
-                                        <h5 className="card-title">Regular discounts</h5>
-                                        <p className="card-text">Always thinking about customers.</p>
-                                        <a href="#" className="btn btn-primary"><i className="fas fa-user"></i> Register now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-sm">
-                                <div className="card my-3">
-                                    <div className="card-body">
-                                        <h5 className="card-title">No cheating</h5>
-                                        <p className="card-text">
-                                            verified suppliers and quality assurance.</p>
-                                        <a href="#" className="btn btn-primary"><i className="fas fa-user"></i> Register now</a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
 
 
-                    <div className="col-sm text-center">
-                        <div className="card">
+                    <div className="col-sm text-center my-5">
+                        <NavLink exact to="/mobiles">
+                        <div className="card my-3"
+                             data-toggle="modal"
+                             data-target="#goodsContentModal"
+                             style={{cursor:"pointer"}}
+                        >
                             <img src="https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" className="card-img-top" alt="..."/>
                                 <div className="card-body">
-                                    <NavLink exact to="/mobiles">
+
                                         <button type="button" className="btn btn-primary" data-toggle="modal"
                                                 data-target="#goodsContentModal">
                                             <i className="fas fa-mobile"></i> Mobiles
                                         </button>
-                                    </NavLink>
+
                                 </div>
                         </div>
+                        </NavLink>
 
-                        <div className="card my-3">
+                        <NavLink exact to="/Tv">
+                        <div className="card my-3"
+                             data-toggle="modal"
+                             data-target="#goodsContentModal"
+                             style={{cursor:"pointer"}}
+                        >
                             <img src="https://images.unsplash.com/photo-1567690187548-f07b1d7bf5a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" className="card-img-top" alt="..."/>
                             <div className="card-body">
-                                <NavLink exact to="/Tv">
+
                                     <button type="button" className="btn btn-primary" data-toggle="modal"
                                             data-target="#goodsContentModal">
                                         <i className="fas fa-tv"></i> Tv
                                     </button>
-                                </NavLink>
+
                             </div>
                         </div>
+                        </NavLink>
 
-                        <div className="card my-3">
+                        <NavLink exact to="/computers">
+                        <div className="card my-3"
+                             data-toggle="modal"
+                             data-target="#goodsContentModal"
+                             style={{cursor:"pointer"}}
+                        >
                             <img src="https://images.unsplash.com/photo-1497296805880-3b37686c87ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" className="card-img-top" alt="..."/>
                             <div className="card-body">
-                                <NavLink exact to="/computers">
+
                                     <button type="button" className="btn btn-primary" data-toggle="modal"
                                             data-target="#goodsContentModal">
                                         <i className="fas fa-laptop-code"></i> Computers
                                     </button>
-                                </NavLink>
+
                             </div>
                         </div>
+                        </NavLink>
                     </div>
 
 
-                    <div className="col-sm text-center">
-                        <div className="card my-3">
+                    <div className="col-sm text-center ">
+                        <NavLink exact to="/gadgets">
+                        <div className="card my-3"
+                             data-toggle="modal"
+                             data-target="#goodsContentModal"
+                             style={{cursor:"pointer"}}
+                        >
                             <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80" className="card-img-top" alt="..."/>
                             <div className="card-body">
-                                <NavLink exact to="/gadgets">
                                     <button type="button" className="btn btn-primary" data-toggle="modal"
                                             data-target="#goodsContentModal">
-                                        <i className="fab fa-android"></i> Gadgets
+                                        <i className="fab fa-android"></i> Gadgets and audio
                                     </button>
-                                </NavLink>
                             </div>
                         </div>
+                        </NavLink>
 
-                        <div className="card my-3">
-                            <img src="https://images.unsplash.com/photo-1566478989151-541ffa519573?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" className="card-img-top" alt="..."/>
-                            <div className="card-body">
-                                <NavLink exact to="/audio">
-                                    <button type="button" className="btn btn-primary" data-toggle="modal"
-                                            data-target="#goodsContentModal">
-                                        <i className="fas fa-volume-up"></i> Audio
-                                    </button>
-                                </NavLink>
-                            </div>
-                        </div>
-
-                        <div className="card my-3">
+                        <NavLink exact to="/consoles">
+                        <div className="card my-3"
+                             data-toggle="modal"
+                             data-target="#goodsContentModal"
+                             style={{cursor:"pointer"}}
+                        >
                             <img src="https://images.unsplash.com/photo-1531390658120-e06b58d826ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" className="card-img-top" alt="..."/>
                             <div className="card-body">
-                                <NavLink exact to="/consoles">
+
                                     <button type="button" className="btn btn-primary" data-toggle="modal"
                                             data-target="#goodsContentModal">
                                         <i className="fab fa-playstation"></i> Consoles
                                     </button>
-                                </NavLink>
+
                             </div>
                         </div>
+                        </NavLink>
                     </div>
 
                 </div>

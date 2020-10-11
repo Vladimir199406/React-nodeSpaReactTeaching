@@ -3,64 +3,62 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {NavLink, Route} from "react-router-dom";
 import {render} from "react-dom";
 
+
+{/* MOBILE item card in MODAL WINDOW rendering Below */}
 const MobileItem = (props)=>{
     return(
-    <div className="card col-sm my-5" >
-        <img src={props.image} className="card-img-top" alt="..."/>
-        <div className="card-body">
-            <h5 className="card-title">Name: "{props.name}"</h5>
+        <div className="col-sm my-5" >
+            <img src={props.image} className="card-img-top" style={{width: "10rem", height: "10rem"}} alt="..."/>
+            <div className="card-body">
+                <h5 className="card-title">Name: "{props.name}"</h5>
+            </div>
+            <ul className="list-group list-group-flush text-center">
+                <li className="list-group-item">Vendor code: {props.vendor_code}</li>
+                <li className="list-group-item">Price: {props.price} $</li>
+
+                <li className="list-group-item">
+                    <NavLink to="/cart" className="card-link"><i className="fas fa-shopping-cart fa-3x"></i></NavLink>
+                </li>
+                <li className="list-group-item">
+                    <NavLink to="">
+                        <button type="button" className="btn btn-secondary" data-dismiss="modal">
+                            <i className="fas fa-times-circle"></i>
+                        </button>
+                    </NavLink>
+                </li>
+            </ul>
         </div>
-        <ul className="list-group list-group-flush text-center">
-            <li className="list-group-item">Vendor code: {props.article}</li>
-            <li className="list-group-item">Price: {props.price} $</li>
-            <li className="list-group-item">Brand: {props.brand}</li>
-            <li className="list-group-item">Color: {props.color}</li>
-            <li className="list-group-item">Camera: {props.camera}</li>
-            <li className="list-group-item">Screen: {props.screen}</li>
-            <li className="list-group-item">Memory: {props.memory}</li>
-            <li className="list-group-item">Size: {props.size}</li>
-            <li className="list-group-item">Other info: {props.otherChar}</li>
-            <li className="list-group-item">In stock: {props.inStock}</li>
-            <li className="list-group-item">
-                <NavLink to="/cart" className="card-link"><i className="fas fa-shopping-cart fa-3x"></i></NavLink>
-            </li>
-            <li className="list-group-item">
-                <NavLink to="">
-                    <button type="button" className="btn btn-secondary" data-dismiss="modal">
-                        <i className="fas fa-times-circle"></i>
-                    </button>
-                </NavLink>
-            </li>
-        </ul>
-    </div>
     )
 }
+{/* MOBILE item card in MODAL WINDOW rendering Above */}
 
+
+{/* ModalWindowGoodsTemplate with state and FULL MODAL WINDOW rendering Below */}
 class ModalWindowGoodsTemplate extends React.Component {
     constructor(props) {
         super(props);
         this.state = {mobileItems: []}
     }
     componentDidMount() {
-        this.props.getGoods().then(
-            goods=>{
-                let goodsCount = goods.length;
+        this.props.getMobiles().then(
+            mobiles=>{
+                let mobilesCount = mobiles.length;
                 let mobileItems = [];
-                for (let i = 0; i < goodsCount; i++) {
+                for (let i = 0; i < mobilesCount; i++) {
                     mobileItems.push(<MobileItem
                         key={i}
-                        image={goods[i].image}
-                        article={goods[i].article}
-                        name={goods[i].name}
-                        price={goods[i].price}
-                        brand={goods[i].brand}
-                        screen={goods[i].screen}
-                        camera={goods[i].camera}
-                        memory={goods[i].memory}
-                        size={goods[i].size}
-                        otherChar={goods[i].otherChar}
-                        color={goods[i].color}
-                        inStock={goods[i].inStock}
+                        image={mobiles[i].image}
+                        vendor_code={mobiles[i].vendor_code}
+                        name={mobiles[i].name}
+                        price={mobiles[i].price}
+                        brand={mobiles[i].brand}
+                        screen={mobiles[i].screen}
+                        camera={mobiles[i].camera}
+                        memory={mobiles[i].memory}
+                        size={mobiles[i].size}
+                        otherChar={mobiles[i].otherChar}
+                        color={mobiles[i].color}
+                        inStock={mobiles[i].inStock}
                     />)
                 }
                 this.setState({mobileItems: mobileItems})
@@ -98,7 +96,7 @@ class ModalWindowGoodsTemplate extends React.Component {
                         </div>
                         <div className="modal-body">
                             <Route exact path="/mobiles" render={() => {
-                                return <div>
+                                return <div className="row">
                                     {this.state.mobileItems}
                                 </div>
                             }}/>
@@ -141,5 +139,5 @@ class ModalWindowGoodsTemplate extends React.Component {
         );
     }
 }
-
+{/* ModalWindowGoodsTemplate with state and FULL MODAL WINDOW rendering Above */}
 export default ModalWindowGoodsTemplate;
