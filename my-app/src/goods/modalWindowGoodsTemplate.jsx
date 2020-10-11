@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {NavLink, Route} from "react-router-dom";
 import {render} from "react-dom";
+import MobileOneItem from "./moreInfoContent";
 
 
 {/* MOBILE item card in MODAL WINDOW rendering Below */}
@@ -49,7 +50,7 @@ const MobileItem = (props)=>{
 class ModalWindowGoodsTemplate extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {mobileItems: []}
+        this.state = {mobileItems: [], oneMobileItemContent: ""}
     }
     componentDidMount() {
         this.props.getMobiles().then(
@@ -108,16 +109,7 @@ class ModalWindowGoodsTemplate extends React.Component {
                         </div>
                         <div className="modal-body">
                             <Route exact path="/mobiles/:mobile" render={(props) => {
-                                let endPath = props.location.pathname.split("/")[2];
-                                this.props.getOneMobileItem(endPath).then(
-                                    oneMobileItem=>{
-                                        console.log(oneMobileItem);
-                                        return <div>
-                                            {oneMobileItem}
-                                        </div>
-                                    }
-                                )
-                                console.log(endPath);
+                                return <MobileOneItem getOneMobileItem={this.props.getOneMobileItem}/>
                             }}/>
                             <Route exact path="/mobiles" render={() => {
                                 return <div className="row">
