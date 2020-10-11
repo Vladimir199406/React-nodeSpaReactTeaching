@@ -15,7 +15,10 @@ function App(props) {
               <MainPageHeader/>
               <MainPageMain/>
               <MainPageFooter/>
-              <ModalWindowGoodsTemplate getMobiles={props.getMobiles}/>
+              <ModalWindowGoodsTemplate
+                  getMobiles={props.getMobiles}
+                  getOneMobileItem={props.getOneMobileItem}
+              />
           </BrowserRouter>
       </div>
   );

@@ -7,6 +7,9 @@ const MainPageMain=()=>{
     return (
         <main>
             <div className="container justify-content-center">
+                <div className="toast" role="alert" aria-live="polite" aria-atomic="true" data-delay="10000">
+                    <div role="alert" aria-live="assertive" aria-atomic="true">...</div>
+                </div>
                 <div className="row my-3">
                     <div className="col-sm p-3 mb-5 rounded" style={{backgroundColor: "#282c34"}}>
                         <div id="carouselExampleFade" className="carousel slide carousel-fade" data-ride="carousel">

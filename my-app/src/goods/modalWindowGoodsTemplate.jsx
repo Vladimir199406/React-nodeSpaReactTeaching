@@ -17,8 +17,20 @@ const MobileItem = (props)=>{
                 <li className="list-group-item">Price: {props.price} $</li>
 
                 <li className="list-group-item">
-                    <NavLink to="/cart" className="card-link"><i className="fas fa-shopping-cart fa-3x"></i></NavLink>
+                    <button type="button" className="btn btn-lg btn-primary" data-toggle="popover" title="Popover title"
+                            data-content="Item added to cart">
+                        <i className="fas fa-cart-plus"></i>
+                    </button>
                 </li>
+                {/* ACTIVATE MODAL MORE INFO WINDOW about card  Below */}
+                <li className="list-group-item">
+                    <NavLink exact to={"/" + props.category +"/" + props.vendor_code}>
+                        <button type="button" className="btn btn-primary">
+                            More info
+                        </button>
+                    </NavLink>
+                </li>
+                {/* ACTIVATE MODAL MORE INFO WINDOW about card  Above */}
                 <li className="list-group-item">
                     <NavLink to="">
                         <button type="button" className="btn btn-secondary" data-dismiss="modal">
@@ -47,6 +59,7 @@ class ModalWindowGoodsTemplate extends React.Component {
                 for (let i = 0; i < mobilesCount; i++) {
                     mobileItems.push(<MobileItem
                         key={i}
+                        category = {mobiles[i].category}
                         image={mobiles[i].image}
                         vendor_code={mobiles[i].vendor_code}
                         name={mobiles[i].name}
@@ -65,7 +78,6 @@ class ModalWindowGoodsTemplate extends React.Component {
             }
         )
     }
-
 
     render() {
         return (
@@ -95,6 +107,18 @@ class ModalWindowGoodsTemplate extends React.Component {
                             </div>
                         </div>
                         <div className="modal-body">
+                            <Route exact path="/mobiles/:mobile" render={(props) => {
+                                let endPath = props.location.pathname.split("/")[2];
+                                this.props.getOneMobileItem(endPath).then(
+                                    oneMobileItem=>{
+                                        console.log(oneMobileItem);
+                                        return <div>
+                                            {oneMobileItem}
+                                        </div>
+                                    }
+                                )
+                                console.log(endPath);
+                            }}/>
                             <Route exact path="/mobiles" render={() => {
                                 return <div className="row">
                                     {this.state.mobileItems}
@@ -140,4 +164,5 @@ class ModalWindowGoodsTemplate extends React.Component {
     }
 }
 {/* ModalWindowGoodsTemplate with state and FULL MODAL WINDOW rendering Above */}
+
 export default ModalWindowGoodsTemplate;

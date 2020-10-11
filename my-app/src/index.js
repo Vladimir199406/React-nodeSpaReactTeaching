@@ -7,12 +7,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {getMobiles} from "./state";
+import {getMobiles, getOneMobileItem} from "./state";
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <App getMobiles={getMobiles}/>
+    <App getMobiles={getMobiles} getOneMobileItem={getOneMobileItem}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
