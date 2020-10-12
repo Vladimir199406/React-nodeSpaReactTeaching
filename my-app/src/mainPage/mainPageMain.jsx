@@ -5,11 +5,13 @@ import SendingEmailForm from "./sendingEmailForm";
 import MailModal from "./mailModal";
 import RegisterModal from "../account/registerModal";
 import LoginModal from "../account/loginModal";
+import CartModal from "../cart/cartModal";
 
 
 const MainPageMain=()=>{
     return (
         <main>
+            <CartModal/>
             <RegisterModal/>
             <LoginModal/>
             <div className="container justify-content-center">

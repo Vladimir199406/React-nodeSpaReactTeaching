@@ -87,9 +87,12 @@ const MainPageHeader=()=>{
 
 
                         <li className="nav-item mx5">
-                            <NavLink className="nav-link" to="">
+                            <NavLink className="nav-link" to="/cart">
                                 <span>
-                                    <i className="fas fa-cart-arrow-down fa-2x"></i>
+                                     <button type="button" className="btn btn-primary" data-toggle="modal"
+                                             data-target="#cartModal">
+                                        <i className="fas fa-cart-arrow-down fa-2x"></i>
+                                    </button>
                                 </span>
                             </NavLink>
                         </li>
