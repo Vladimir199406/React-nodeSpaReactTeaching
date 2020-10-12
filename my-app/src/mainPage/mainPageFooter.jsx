@@ -8,30 +8,33 @@ const MainPageFooter=()=>{
             <div className="my-4">
                 <nav className="navbar navbar-light bg-light">
                     <span className="navbar-brand mb-0 h1">
-                        <NavLink className="nav-link" to="">
+                        <a className="nav-link" href="#">
                             <i className="fas fa-hand-point-up"></i>
-                            <span className="sr-only">(current)</span></NavLink>
+                            <span className="sr-only">(current)</span>
+                        </a>
                     </span>
                     <span className="navbar-brand mb-0 h1">
-                        <a className="nav-link" href="https://wa.me/79152431253"><i className="fas fa-phone-volume"></i>: 8-915-243-12-53 </a>
+                        <a className="nav-link" href="https://wa.me/79152431253">
+                            <i className="fas fa-phone-volume"></i>: 8-915-243-12-53
+                        </a>
                     </span>
                     <div><span className="navbar-brand mb-0 h1">
-                        <a className="nav-link" href="#">
+                        <a className="nav-link" href="https://vk.com/id325907685">
                             <i className="fab fa-twitter-square" style={{color: "#007bff"}}></i>
                         </a>
                     </span>
                     <span className="navbar-brand mb-0 h1">
-                        <a className="nav-link" href="#">
+                        <a className="nav-link" href="https://vk.com/id325907685">
                             <i className="fab fa-facebook" style={{color: "grey"}}></i>
                         </a>
                     </span>
                     <span className="navbar-brand mb-0 h1">
-                        <a className="nav-link" href="#">
+                        <a className="nav-link" href="https://vk.com/id325907685">
                             <i className="fab fa-instagram-square" style={{color: "brown"}}></i>
                         </a>
                     </span>
                     <span className="navbar-brand mb-0 h1">
-                        <a className="nav-link" href="#">
+                        <a className="nav-link" href="https://vk.com/id325907685">
                             <i className="fab fa-vk"></i>
                         </a>
                     </span>

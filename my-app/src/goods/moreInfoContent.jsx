@@ -1,6 +1,7 @@
 import React from "react";
 import {render} from "react-dom";
 import '../index.css';
+import {NavLink} from "react-router-dom";
 
 class MobileOneItem extends React.Component {
     constructor(props) {
@@ -21,6 +22,15 @@ class MobileOneItem extends React.Component {
 
         render(){
             return <div className="container align-content-center">
+                <div className="align-content-center">
+                    {/* RETURN TO ACTUAL CATEGORY OF PRODUCTS BELOW*/}
+                    <NavLink exact to={"/" + this.state.oneMobileItemContent.category}>
+                        <button type="button" className="btn btn-primary my-2">
+                            <i className="fas fa-backspace  fa-2x mx-2"></i>
+                        </button>
+                    </NavLink>
+                    {/* RETURN TO ACTUAL CATEGORY OF PRODUCTS ABOVE*/}
+                </div>
                 <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
                     <div className="carousel-inner">
                         <div className="carousel-item active">

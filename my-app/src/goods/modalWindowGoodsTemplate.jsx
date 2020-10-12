@@ -93,13 +93,6 @@ class ModalWindowGoodsTemplate extends React.Component {
                  aria-hidden="true">
                 <div className="modal-dialog">
                     <div className="modal-content">
-                        <div>
-                            {/* RETURN TO ACTUAL CATEGORY OF PRODUCTS BELOW*/}
-                            <button type="button" className="close" data-dismiss="modal" aria-label="Close" >
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            {/* RETURN TO ACTUAL CATEGORY OF PRODUCTS ABOVE*/}
-                        </div>
                         <div className="modal-body ">
                             <Route exact path="/mobiles/:mobile" render={(props) => {
                                 return <div className="container-fluid row align-content-center">
@@ -142,13 +135,6 @@ class ModalWindowGoodsTemplate extends React.Component {
                                     consoles
                                 </div>
                             }}/>
-                        </div>
-                        <div className="modal-footer">
-                            <NavLink to="">
-                                <button type="button" className="btn btn-secondary" data-dismiss="modal">
-                                    <i className="fas fa-times-circle"></i>
-                                </button>
-                            </NavLink>
                         </div>
                     </div>
                 </div>
