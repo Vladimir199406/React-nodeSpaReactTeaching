@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {NavLink, Route} from "react-router-dom";
 import {render} from "react-dom";
 import MobileOneItem from "./moreInfoContent";
+import ModalWindowHeaderWithSearch from "./modalWindowHeaderWithSearch";
 
 
 {/* MOBILE item card in MODAL WINDOW rendering Below */}
@@ -50,7 +51,7 @@ const MobileItem = (props)=>{
 class ModalWindowGoodsTemplate extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {mobileItems: [], oneMobileItemContent: ""}
+        this.state = {mobileItems: [], oneMobileItemContent: []}
     }
     componentDidMount() {
         this.props.getMobiles().then(
@@ -88,25 +89,13 @@ class ModalWindowGoodsTemplate extends React.Component {
                 <div className="modal-dialog">
                     <div className="modal-content">
                         <div>
-                            <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                            {/* RETURN TO ACTUAL CATEGORY OF PRODUCTS BELOW*/}
+                            <button type="button" className="close" data-dismiss="modal" aria-label="Close" >
                                 <span aria-hidden="true">&times;</span>
                             </button>
+                            {/* RETURN TO ACTUAL CATEGORY OF PRODUCTS ABOVE*/}
                         </div>
-                        <div className="modal-header align-content-center">
-                            <div className="col-sm">
-                                <form className="form-inline my-2 my-lg-0 row">
-                                    <div className="container col-sm no-margin">
-                                        <input className="form-control mr-sm-2" type="search" placeholder="Search"
-                                               aria-label="Search"/>
-                                    </div>
-                                    <div className="container col-sm no-margin">
-                                        <button className="btn btn-outline-success my-2 my-sm-0" type="submit">
-                                            <i className="fas fa-search"></i>
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+                        <ModalWindowHeaderWithSearch/>
                         <div className="modal-body">
                             <Route exact path="/mobiles/:mobile" render={(props) => {
                                 return <MobileOneItem getOneMobileItem={this.props.getOneMobileItem}/>
