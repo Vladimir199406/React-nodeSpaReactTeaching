@@ -1,5 +1,6 @@
 import React from "react";
 import {render} from "react-dom";
+import '../index.css';
 
 class MobileOneItem extends React.Component {
     constructor(props) {
@@ -23,27 +24,34 @@ class MobileOneItem extends React.Component {
                 <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img src={this.state.oneMobileItemContent.image} className="d-block w-100" alt="..."/>
+                            <img src={this.state.oneMobileItemContent.image} className="d-block  pictureCarousel mx-auto" alt="..."/>
                         </div>
                         <div className="carousel-item">
-                            <img src="..." className="d-block w-100" alt="..."/>
+                            <img src={this.state.oneMobileItemContent.imageBack} className="d-block  pictureCarousel mx-auto" alt="..."/>
                         </div>
                         <div className="carousel-item">
-                            <img src="..." className="d-block w-100" alt="..."/>
+                            <img src={this.state.oneMobileItemContent.imageLeft} className="d-block  pictureCarousel mx-auto" alt="..."/>
+                        </div>
+                        <div className="carousel-item">
+                            <img src={this.state.oneMobileItemContent.imageRight} className="d-block  pictureCarousel mx-auto" alt="..."/>
                         </div>
                     </div>
                     <a className="carousel-control-prev" href="#carouselExampleControls" role="button"
-                       data-slide="prev">
+                       data-slide="prev"
+                       style={{backgroundColor: "black" ,borderRadius: "1em 0em 0em 1em"}}
+                    >
                         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span className="sr-only">Previous</span>
                     </a>
                     <a className="carousel-control-next" href="#carouselExampleControls" role="button"
-                       data-slide="next">
+                       data-slide="next"
+                       style={{backgroundColor: "black", borderRadius: "0em 1em 1em 0em"}}
+                    >
                         <span className="carousel-control-next-icon" aria-hidden="true"></span>
                         <span className="sr-only">Next</span>
                     </a>
                 </div>
-                <h1 className="text-lg-center">{this.state.oneMobileItemContent.name}</h1>
+                <h1 className="text-center my-4">{this.state.oneMobileItemContent.name}</h1>
                 <h5>Price: {this.state.oneMobileItemContent.price} $</h5>
                 <h5>Brand: {this.state.oneMobileItemContent.brand}</h5>
                 <h5>Vendor code: {this.state.oneMobileItemContent.vendor_code}</h5>

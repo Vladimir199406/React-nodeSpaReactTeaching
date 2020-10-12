@@ -1,4 +1,5 @@
 import React from "react";
+import {render} from "react-dom";
 
 const ModalWindowHeaderWithSearch = ()=>{
     return(
@@ -17,7 +18,7 @@ const ModalWindowHeaderWithSearch = ()=>{
                 </form>
             </div>
         </div>
-            )
+    )
 }
 
 export default ModalWindowHeaderWithSearch;

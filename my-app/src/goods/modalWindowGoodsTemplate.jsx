@@ -10,7 +10,7 @@ import ModalWindowHeaderWithSearch from "./modalWindowHeaderWithSearch";
 const MobileItem = (props)=>{
     return(
         <div className="col-sm my-5" >
-            <img src={props.image} className="card-img-top" style={{width: "10rem", height: "10rem"}} alt="..."/>
+            <img src={props.image} className="card-img-top mx-auto" style={{width: "10rem", height: "10rem", borderRadius: "1em"}} alt="..."/>
             <div className="card-body">
                 <h5 className="card-title">Name: "{props.name}"</h5>
             </div>
@@ -59,22 +59,27 @@ class ModalWindowGoodsTemplate extends React.Component {
                 let mobilesCount = mobiles.length;
                 let mobileItems = [];
                 for (let i = 0; i < mobilesCount; i++) {
-                    mobileItems.push(<MobileItem
-                        key={i}
-                        category = {mobiles[i].category}
-                        image={mobiles[i].image}
-                        vendor_code={mobiles[i].vendor_code}
-                        name={mobiles[i].name}
-                        price={mobiles[i].price}
-                        brand={mobiles[i].brand}
-                        screen={mobiles[i].screen}
-                        camera={mobiles[i].camera}
-                        memory={mobiles[i].memory}
-                        size={mobiles[i].size}
-                        otherChar={mobiles[i].otherChar}
-                        color={mobiles[i].color}
-                        inStock={mobiles[i].inStock}
-                    />)
+                    mobileItems.push(
+                        <MobileItem
+                            key={i}
+                            category = {mobiles[i].category}
+                            image={mobiles[i].image}
+                            imageBack={mobiles[i].imageBack}
+                            imageLeft={mobiles[i].imageLeft}
+                            imageRight={mobiles[i].imageRight}
+                            vendor_code={mobiles[i].vendor_code}
+                            name={mobiles[i].name}
+                            price={mobiles[i].price}
+                            brand={mobiles[i].brand}
+                            screen={mobiles[i].screen}
+                            camera={mobiles[i].camera}
+                            memory={mobiles[i].memory}
+                            size={mobiles[i].size}
+                            otherChar={mobiles[i].otherChar}
+                            color={mobiles[i].color}
+                            inStock={mobiles[i].inStock}
+                        />
+                    )
                 }
                 this.setState({mobileItems: mobileItems})
             }
@@ -95,38 +100,45 @@ class ModalWindowGoodsTemplate extends React.Component {
                             </button>
                             {/* RETURN TO ACTUAL CATEGORY OF PRODUCTS ABOVE*/}
                         </div>
-                        <ModalWindowHeaderWithSearch/>
-                        <div className="modal-body">
+                        <div className="modal-body ">
                             <Route exact path="/mobiles/:mobile" render={(props) => {
-                                return <MobileOneItem getOneMobileItem={this.props.getOneMobileItem}/>
+                                return <div className="container-fluid row align-content-center">
+                                    <MobileOneItem getOneMobileItem={this.props.getOneMobileItem}/>
+                                </div>
                             }}/>
                             <Route exact path="/mobiles" render={() => {
                                 return <div className="row">
+                                    <ModalWindowHeaderWithSearch/>
                                     {this.state.mobileItems}
                                 </div>
                             }}/>
                             <Route exact path="/Tv" render={() => {
                                 return <div>
+                                    <ModalWindowHeaderWithSearch/>
                                     TV
                                 </div>
                             }}/>
                             <Route exact path="/computers" render={() => {
                                 return <div>
+                                    <ModalWindowHeaderWithSearch/>
                                     computers
                                 </div>
                             }}/>
                             <Route exact path="/gadgets" render={() => {
                                 return <div>
+                                    <ModalWindowHeaderWithSearch/>
                                     gadgets
                                 </div>
                             }}/>
                             <Route exact path="/audio" render={() => {
                                 return <div>
+                                    <ModalWindowHeaderWithSearch/>
                                     audio
                                 </div>
                             }}/>
                             <Route exact path="/consoles" render={() => {
                                 return <div>
+                                    <ModalWindowHeaderWithSearch/>
                                     consoles
                                 </div>
                             }}/>
