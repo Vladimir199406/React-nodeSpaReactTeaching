@@ -3,11 +3,15 @@ import '../index.css';
 import {NavLink} from "react-router-dom";
 import SendingEmailForm from "./sendingEmailForm";
 import MailModal from "./mailModal";
+import RegisterModal from "../account/registerModal";
+import LoginModal from "../account/loginModal";
 
 
 const MainPageMain=()=>{
     return (
         <main>
+            <RegisterModal/>
+            <LoginModal/>
             <div className="container justify-content-center">
                 <div className="toast" role="alert" aria-live="polite" aria-atomic="true" data-delay="10000">
                     <div role="alert" aria-live="assertive" aria-atomic="true">...</div>
@@ -42,7 +46,10 @@ const MainPageMain=()=>{
                                     <div className="card-body">
                                         <h5 className="card-title">Thousands of goods with</h5>
                                         <p className="card-text">Open the catalog, choose your own goods delivered to us from verified suppliers.</p>
-                                        <a href="#" className="btn btn-primary"><i className="fas fa-user"></i> Register now</a>
+                                        <button type="button" className="btn btn-primary" data-toggle="modal"
+                                                data-target="#registerModal">
+                                            <NavLink exact to="/register" className="btn btn-primary"><i className="fas fa-user"></i> Register now</NavLink>
+                                        </button>
                                     </div>
                                 </div>
 
@@ -51,7 +58,10 @@ const MainPageMain=()=>{
                                     <div className="card-body">
                                         <h5 className="card-title">No cheating</h5>
                                         <p className="card-text">Goods are delivered to us ONLY from verified suppliers.</p>
-                                        <a href="#" className="btn btn-primary"><i className="fas fa-user"></i> Register now</a>
+                                        <button type="button" className="btn btn-primary" data-toggle="modal"
+                                                data-target="#registerModal">
+                                            <NavLink exact to="/register" className="btn btn-primary"><i className="fas fa-user"></i> Register now</NavLink>
+                                        </button>
                                     </div>
                                 </div>
 
@@ -62,7 +72,10 @@ const MainPageMain=()=>{
                                         <p className="card-text">Register an account or sign in to know about your special
                                             loyalty program
                                         </p>
-                                        <a href="#" className="btn btn-primary"><i className="fas fa-user"></i> Register now</a>
+                                        <button type="button" className="btn btn-primary" data-toggle="modal"
+                                                data-target="#registerModal">
+                                            <NavLink exact to="/register" className="btn btn-primary"><i className="fas fa-user"></i> Register now</NavLink>
+                                        </button>
                                     </div>
                                 </div>
 

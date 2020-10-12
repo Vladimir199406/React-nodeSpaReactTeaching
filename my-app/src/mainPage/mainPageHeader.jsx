@@ -22,13 +22,6 @@ const MainPageHeader=()=>{
 
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
-                        <li className="nav-item active">
-                            <NavLink className="nav-link my-2" to="">
-                                <i className="fas fa-home fa-2x"></i>
-                                <span className="sr-only">(current)</span>
-                            </NavLink>
-                        </li>
-
 
                         <li className="nav-item dropdown mx-5 my-2">
                             <NavLink className="nav-link dropdown-toggle" to="" id="navbarDropdown" role="button"
@@ -79,13 +72,13 @@ const MainPageHeader=()=>{
                             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <NavLink className="dropdown-item" exact to="/register">
                                     <button type="button" className="btn btn-primary" data-toggle="modal"
-                                            data-target="#goodsContentModal">
+                                            data-target="#registerModal">
                                         <i className="far fa-user"></i> Register
                                     </button>
                                 </NavLink>
                                 <NavLink className="dropdown-item" exact to="/login">
                                     <button type="button" className="btn btn-primary" data-toggle="modal"
-                                            data-target="#goodsContentModal">
+                                            data-target="#loginModal">
                                         <i className="far fa-user-circle"></i> Login
                                     </button>
                                 </NavLink>

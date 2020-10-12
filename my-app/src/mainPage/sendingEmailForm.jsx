@@ -28,7 +28,7 @@ class SendingEmailForm extends React.Component{
                 <form action="" onSubmit={this.sendEmail}>
                     <div className="form-group">
                         <label htmlFor="exampleFormControlTextarea1" className="my-3">
-                            <h5><i className="fas fa-mail-bulk"></i> me or use social network links below.</h5>
+                            <h5><i className="fas fa-mail-bulk"></i> me or use social network links below</h5>
                         </label>
                         <textarea className="form-control"  rows="3"
                                   placeholder="Put your message here..."

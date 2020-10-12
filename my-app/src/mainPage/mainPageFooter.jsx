@@ -9,6 +9,7 @@ const MainPageFooter=()=>{
                 <nav className="navbar navbar-light bg-light">
                     <span className="navbar-brand mb-0 h1">
                         <a className="nav-link" href="#">
+                            <i className="fas fa-home fa-2x"></i>
                             <i className="fas fa-hand-point-up"></i>
                             <span className="sr-only">(current)</span>
                         </a>
@@ -20,22 +21,22 @@ const MainPageFooter=()=>{
                     </span>
                     <div><span className="navbar-brand mb-0 h1">
                         <a className="nav-link" href="https://vk.com/id325907685">
-                            <i className="fab fa-twitter-square" style={{color: "#007bff"}}></i>
+                            <i className="fab fa-twitter-square fa-lg" style={{color: "#007bff"}}></i>
                         </a>
                     </span>
                     <span className="navbar-brand mb-0 h1">
                         <a className="nav-link" href="https://vk.com/id325907685">
-                            <i className="fab fa-facebook" style={{color: "grey"}}></i>
+                            <i className="fab fa-facebook fa-lg" style={{color: "grey"}}></i>
                         </a>
                     </span>
                     <span className="navbar-brand mb-0 h1">
                         <a className="nav-link" href="https://vk.com/id325907685">
-                            <i className="fab fa-instagram-square" style={{color: "brown"}}></i>
+                            <i className="fab fa-instagram-square fa-lg" style={{color: "brown"}}></i>
                         </a>
                     </span>
                     <span className="navbar-brand mb-0 h1">
                         <a className="nav-link" href="https://vk.com/id325907685">
-                            <i className="fab fa-vk"></i>
+                            <i className="fab fa-vk fa-lg"></i>
                         </a>
                     </span>
                     </div>
