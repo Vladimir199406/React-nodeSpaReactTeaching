@@ -61,20 +61,28 @@ class MobileOneItem extends React.Component {
                         <span className="sr-only">Next</span>
                     </a>
                 </div>
-                <h1 className="text-center my-4">{this.state.oneMobileItemContent.name}</h1>
-                <h5>Price: {this.state.oneMobileItemContent.price} $</h5>
-                <h5>Brand: {this.state.oneMobileItemContent.brand}</h5>
-                <h5>Vendor code: {this.state.oneMobileItemContent.vendor_code}</h5>
-                <h5>Color: {this.state.oneMobileItemContent.color}</h5>
-                <h5>In stock: {this.state.oneMobileItemContent.inStock}</h5>
-                <h4>Specifications: </h4>
-                <ul>
-                    <li>Screen: {this.state.oneMobileItemContent.screen}</li>
-                    <li>Memory: {this.state.oneMobileItemContent.memory}</li>
-                    <li>Camera: {this.state.oneMobileItemContent.camera}</li>
-                    <li>Size: {this.state.oneMobileItemContent.size}</li>
-                    <li>Other characteristics: {this.state.oneMobileItemContent.otherChar}</li>
-                </ul>
+                <div className="container">
+                    <h1 className="text-center my-4">{this.state.oneMobileItemContent.name}</h1>
+                    <h4 className="text-center my-3">Price: {this.state.oneMobileItemContent.price} $</h4>
+                    <h5>Brand: {this.state.oneMobileItemContent.brand}</h5>
+                    <h5>Vendor code: {this.state.oneMobileItemContent.vendor_code}</h5>
+                    <h5>Color: {this.state.oneMobileItemContent.color}</h5>
+                    <h5>In stock: {this.state.oneMobileItemContent.inStock}</h5>
+                    <h4>Specifications: </h4>
+                    <ul>
+                        <li>Screen: {this.state.oneMobileItemContent.screen}</li>
+                        <li>Memory: {this.state.oneMobileItemContent.memory}</li>
+                        <li>Camera: {this.state.oneMobileItemContent.camera}</li>
+                        <li>Size: {this.state.oneMobileItemContent.size}</li>
+                        <li>Other characteristics: {this.state.oneMobileItemContent.otherChar}</li>
+                    </ul>
+                </div>
+                <div>
+                    <button type="button" className="btn btn-lg btn-primary" data-toggle="popover" title="Popover title"
+                            data-content="Item added to cart">
+                        <i className="fas fa-cart-plus"></i>
+                    </button>
+                </div>
             </div>
         }
 }

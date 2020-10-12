@@ -1,6 +1,8 @@
 import React from 'react';
 import '../index.css';
 import {NavLink} from "react-router-dom";
+import SendingEmailForm from "./sendingEmailForm";
+import MailModal from "./mailModal";
 
 
 const MainPageMain=()=>{
@@ -165,22 +167,22 @@ const MainPageMain=()=>{
             {/* youtube help me  Below */}
             <div className="container">
                 <div className="container">
-                    <h3 style={{color: "brown"}}>
+                    <h3 className="my-2" style={{color: "brown"}}>
                         #juniors developers lives matter...
                     </h3>
-                    <h1 className="text-center my-3" style={{color: "white"}}>
-                        Special thanks to:
-                    </h1>
-                    <h3 className="text-right" style={{color: "brown"}}>
+                    <h3 className="text-right my-2" style={{color: "brown"}}>
                         #just code it...
                     </h3>
-                    <h3 className="text-center" style={{color: "brown"}}>
+                    <h3 className="text-center my-2" style={{color: "brown"}}>
                         #it is never too late to start using "Bootstrap"
                     </h3>
+                    <h1 className="text-center my-5" style={{color: "white", }}>
+                        Special thanks to:
+                    </h1>
                 </div>
                 <div className="container row my-5">
                     <div className="col-sm my-2">
-                        <div className="embed-responsive embed-responsive-16by9 align-content-center" style={{borderRadius: "4rem"}}>
+                        <div className="embed-responsive embed-responsive-16by9 align-content-center" style={{borderRadius: "0.4rem"}}>
                             <iframe width="884" height="497" src="https://www.youtube.com/embed/FJY2RKggXWc"
                                     frameBorder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -189,7 +191,7 @@ const MainPageMain=()=>{
                         </div>
                     </div>
                     <div className="col-sm my-2">
-                        <div className="embed-responsive embed-responsive-16by9 align-content-center" style={{borderRadius: "4rem"}}>
+                        <div className="embed-responsive embed-responsive-16by9 align-content-center" style={{borderRadius: "0.4rem"}}>
                             <iframe width="640" height="360" src="https://www.youtube.com/embed/Ps2TiA5dIKc" frameBorder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowFullScreen>
@@ -197,8 +199,14 @@ const MainPageMain=()=>{
                         </div>
                     </div>
                 </div>
-                {/* youtube help me  Above */}
             </div>
+            {/* youtube help me  Above */}
+            {/* sending mail Below */}
+            <div className="container-fluid">
+                <SendingEmailForm/>
+            </div>
+            <MailModal/>
+            {/* sending mail Above */}
         </main>
     )
 }
